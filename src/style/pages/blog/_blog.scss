@@ -1,0 +1,361 @@
+.Blog_property__text {
+    width: 1200px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 28px;
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    span {
+        line-height: 60px;
+    }
+
+    img {
+        @extend %base_img;
+        border-radius: 28px;
+    }
+}
+
+.Blog_property__Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &__1,
+    &__2,
+    &__3,
+    &__4 {
+        border: 1px solid #868686;
+        border-radius: 6px;
+        align-items: center;
+        padding: 6.5px 16px;
+        display: flex;
+        background-color: #f7f7f7;
+
+        i {
+            margin-right: 8px;
+        }
+    }
+}
+
+.Blog_property__details {
+    max-width: 650px;
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 36px;
+        font-weight: 550;
+        line-height: 70px;
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    ul {
+        line-height: 30px;
+        margin-left: 40px;
+        list-style: inherit;
+        margin: 30px 0;
+    }
+
+    span {
+        line-height: 24px;
+    }
+
+    h4 {
+        margin: 30px 0;
+        line-height: 24px;
+    }
+}
+
+.Blog_property__Card__txt {
+    h1 {
+        font-size: 36px;
+        font-weight: 550;
+        line-height: 100px;
+    }
+}
+
+.Blog_property__Card {
+    max-width: 650px;
+
+    p {
+        margin: 40px 0;
+        line-height: 24px;
+    }
+}
+
+.Request_info {
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    box-shadow: 0 36px 56px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin: auto;
+}
+
+.blogCardAdd {
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px 0;
+    text-align: start;
+}
+
+.blogCardAdd h1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.blogCardAdd span {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.blogCardAdd button span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blogCardAdd a button {
+    color: #fff;
+    background-color: #0c0407;
+    border-radius: 12px;
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blogCardAdd a button:hover {
+    background-color: #333;
+}
+
+.blogCardAddBottom p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.AddRequestForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.AddRequestForm label {
+    margin: 30px 0 10px;
+    font-size: 14px;
+}
+
+.AddRequestForm input {
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    width: 100%;
+    height: 48px;
+    padding: 13px 20px 14px;
+}
+
+.AddRequestForm button {
+    background-color: #0c0407;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.AddRequestForm button:hover {
+    background-color: #333;
+}
+
+.blogCardAddAgents h1 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.blogCardAddAgentsimg {
+    display: flex;
+    flex-direction: row;
+}
+
+.blogCardAddAgentsimg img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.blogCardAddAgentsimg span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blogCardAddAgentsimg p,
+h6 {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.blogCardAddAgentsimgtxt {
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    p {
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 4px;
+        display: flex;
+    }
+
+    h6 {
+        color: #666;
+        letter-spacing: -.01em;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.Propertyamnesties__basket {
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    flex-flow: column;
+    padding: 28px 20px 24px;
+    text-decoration: none;
+    display: flex;
+
+    &__img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 40px;
+
+        img {
+            @extend %base_img;
+        }
+    }
+
+    p {
+        letter-spacing: -.01em;
+        font-weight: 600;
+        line-height: 122%;
+    }
+}
+
+.amnestygrid {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.Propertyamnesties__txt {
+    h1 {
+        font-size: 36px;
+        line-height: 220%;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Blog_property__text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .Blog_property__Cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .amnestygrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Request_info {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .Blog_property__details,
+    .Blog_property__Card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .AddRequestForm {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Blog_property__text h1 {
+        font-size: 40px;
+    }
+
+    .Request_info {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .AddRequestForm input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .AddRequestForm button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Blog_property__text h1 {
+        font-size: 28px;
+    }
+
+    .Blog_property__Cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .amnestygrid {
+        grid-template-columns: 1fr;
+    }
+
+    .Request_info {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .AddRequestForm button {
+        font-size: 13px;
+    }
+}

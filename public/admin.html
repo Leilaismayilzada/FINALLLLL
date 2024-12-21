@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style/style.css">
+</head>
+
+<body>
+    <section style="background-color: #121212;">
+        <div class="admin-panel">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>
+                        <a href="./home.html"><i class="ri-home-2-line"></i></a>
+                        Control Panel
+                    </h2>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#property_admin">PROPERTIES</a></li>
+                    <li><a href="#property_admin1">Category</a></li>
+                    <li><a href="#number_form_create">Numbers</a></li>
+                    <li><a href="#value_form_create">Value</a></li>
+                    <li><a href="#Service_form_create">SERVICE</a></li>
+                    <li><a href="#property_admin_blog">PROPERTYBLOG</a></li>
+                    <li><a href="#amnesty_form_create">AMNESTY</a></li>
+                    <li><a href="#slider_aboutus">SWIPER</a></li>
+                    <li><a href="#slider_aboutus">AGENTS</a></li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <div class="topbar">
+                    <div class="user-info">
+                        <span class="username">Welcome, PARVIN TICIR</span>
+                        <div class="avatar-container">
+                            <img src="../src/assets/WhatsApp Image 2024-12-08 at 01.47.51.jpeg" alt="Admin Avatar"
+                                class="user-avatar">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="form-section" id="property_admin">
+        <div class="container">
+            <form class="form-create-table-property">
+                <label for="formFile" class="form-label">Image</label>
+                <input type="file" id="formFile" name="file" class="form-control" required>
+                <label for="top_desc" class="form-label">Top Description</label>
+                <input type="text" id="top_desc" name="top_desc" class="form-control" required>
+                <label for="top_rent" class="form-label">Top Rent</label>
+                <input type="text" id="top_rent" name="top_rent" class="form-control" required>
+                <label for="bottom_desc" class="form-label">Bottom Description</label>
+                <input type="text" id="bottom_desc" name="bottom_desc" class="form-control" required>
+                <label for="bottom_location" class="form-label">Bottom Location</label>
+                <input type="text" id="bottom_location" name="bottom_location" class="form-control" required>
+                <label for="bottom_direction" class="form-label">Bottom Direction</label>
+                <input type="text" id="bottom_direction" name="bottom_direction" class="form-control" required>
+                <label for="bed_num" class="form-label">Bedrooms</label>
+                <input type="number" id="bed_num" name="bed_num" class="form-control" required>
+                <label for="shower_num" class="form-label">Bathrooms</label>
+                <input type="number" id="shower_num" name="shower_num" class="form-control" required>
+                <label for="car_num" class="form-label">Garage</label>
+                <input type="number" id="car_num" name="car_num" class="form-control" required>
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Image</th>
+                        <th>Top Description</th>
+                        <th>Top Rent</th>
+                        <th>Bottom Desc</th>
+                        <th>Location</th>
+                        <th>Direction</th>
+                        <th>Bedrooms</th>
+                        <th>Bathrooms</th>
+                        <th>Garage</th>
+                        <th>Actions</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="Form_table_body_property"></tbody>
+            </table>
+        </div>
+    </section>
+    <section class="form-section" id="property_admin1">
+        <div class="container">
+            <form class="form-create-table-category">
+                <label for="formFile" class="form-label">Image</label>
+                <input type="file" id="formFile1" name="file" class="form-control" required>
+                <label for="top_desc" class="form-label">Image Name</label>
+                <input type="text" id="top_desc" name="top_desc" class="form-control" required>
+                <label for="top_rent" class="form-label">Image Description</label>
+                <input type="text" id="top_rent" name="top_rent" class="form-control" required>
+
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Image</th>
+                        <th>Image Name</th>
+                        <th>Image Description</th>
+                        <th>Action</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+                <tbody id="Form_table_body_category"></tbody>
+            </table>
+        </div>
+    </section>
+    <section class="form-section" id="number_form_create">
+        <div class="container">
+            <form class="form-create-table-number" id="formCreateNumbers">
+                <label for="formFile1" class="form-label">Number</label>
+                <input type="number" id="formFile1" name="numbers" class="form-control" required>
+
+                <label for="numbers_description" class="form-label">Numbers Description</label>
+                <input type="text" id="numbers_description" name="numbers_description" class="form-control" required>
+
+                <label for="numbers_discover" class="form-label">Numbers Discover</label>
+                <input type="text" id="numbers_discover" name="numbers_discover" class="form-control" required>
+
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Number</th>
+                        <th>Numbers Description</th>
+                        <th>Numbers Discover</th>
+                        <th>Action</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="form_data_number"></tbody>
+            </table>
+        </div>
+    </section>
+    <section class="form-section" id="value_form_create">
+        <div class="container">
+            <form class="form-create-table-value" id="formCreateValue">
+                <label for="formFile1" class="form-label">Image</label>
+                <input type="file" id="formFile2" name="file" class="form-control" required>
+
+                <label for="numbers_description" class="form-label">Numbers Title</label>
+                 <input type="text" id="numbers_description" name="title" class="form-control" required>
+               
+                 <label for="numbers_discover" class="form-label">Numbers Description</label>
+                 <input type="text" id="numbers_discover" name="description" class="form-control" required>
+
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Image</th>
+                        <th>Value Title</th>
+                        <th>Value Description</th>
+                        <th>Action</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="form_data_value"></tbody>
+            </table>
+        </div>
+    </section>
+    <section class="form-section" id="Service_form_create">
+        <div class="container">
+            <form class="form-create-table-value" id="formCreateValue">
+                <label for="formFile3" class="formFile3">Image</label>
+                <input type="file" id="formFile3" name="formFile3" class="form-control" required>
+    
+                <label for="numbers_description" class="form-label">Service Title</label>
+                <input type="text" id="numbers_description" name="title" class="form-control" required>
+                
+                <label for="numbers_discover" class="form-label">Service Description</label>
+                <input type="text" id="numbers_discover" name="description" class="form-control" required>
+    
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+    
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Image</th>
+                        <th>Service Title</th>
+                        <th>Service Description</th>
+                        <th>Action</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="form_data_Service"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="form-section" id="property_admin_blog">
+        <div class="container">
+            <form class="form-create-table-propertyBlog" id="form-create-table-propertyBlog">
+                <label for="formfilepropertyBlog" class="form-label">Image</label>
+                <input type="file" id="formfilepropertyBlog" name="file" class="form-control" required>
+                <label for="top_desc" class="form-label">Top Description</label>
+                <input type="text" id="top_desc" name="top_desc" class="form-control" required>
+                <label for="top_rent" class="form-label">Top Rent</label>
+                <input type="text" id="top_rent" name="top_rent" class="form-control" required>
+                <label for="bottom_desc" class="form-label">Bottom Description</label>
+                <input type="text" id="bottom_desc" name="bottom_desc" class="form-control" required>
+                <label for="bottom_location" class="form-label">Bottom Location</label>
+                <input type="text" id="bottom_location" name="bottom_location" class="form-control" required>
+                <label for="bottom_direction" class="form-label">Bottom Direction</label>
+                <input type="text" id="bottom_direction" name="bottom_direction" class="form-control" required>
+                <label for="bed_num" class="form-label">Bedrooms</label>
+                <input type="number" id="bed_num" name="bed_num" class="form-control" required>
+                <label for="shower_num" class="form-label">Bathrooms</label>
+                <input type="number" id="shower_num" name="shower_num" class="form-control" required>
+                <label for="car_num" class="form-label">Garage</label>
+                <input type="number" id="car_num" name="car_num" class="form-control" required>
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Image</th>
+                        <th>Top Description</th>
+                        <th>Top Rent</th>
+                        <th>Bottom Desc</th>
+                        <th>Location</th>
+                        <th>Direction</th>
+                        <th>Bedrooms</th>
+                        <th>Bathrooms</th>
+                        <th>Garage</th>
+                        <th>Actions</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="Form_table_body_propertyBlog"></tbody>
+            </table>
+        </div>
+    </section>
+    <section class="form-section" id="amnesty_form_create">
+        <div class="container">
+          <form class="form-create-table-amnesty" id="formCreateValue">
+            <label for="formFileamnesty" class="form-label">Image</label>
+            <input type="file" id="formFileamnesty" name="file" class="form-control" required>
+      
+            <label for="numbers_description" class="form-label">Amnesty Title</label>
+            <input type="text" id="numbers_description" name="title" class="form-control" required>
+      
+            <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+          </form>
+      
+          <table class="unique-table">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Image</th>
+                <th>Amnesty Title</th>
+                <th>Action</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="form_data_amnesty"></tbody>
+          </table>
+        </div>
+      </section>
+      
+      <section class="form-section" id="slider_aboutus">
+        <div class="container">
+            <form class="form-create-table-slider-aboutus" id="formCreateValue">
+                <label for="numbers_description" class="form-label"> header</label>
+                 <input type="text" id="header_slider" name="title" class="form-control" required>
+               
+                 <label for="numbers_discover" class="form-label">Numbers Description</label>
+                 <input type="text" id="name_slider" name="description" class="form-control" required>
+
+                 <label for="numbers_discover" class="form-label">Numbers Description</label>
+                 <input type="text" id="location_slider" name="description" class="form-control" required>
+
+                 <label for="formslider" class="form-label">Image</label>
+                 <input type="file" id="formslider" name="file" class="form-control" required>
+ 
+                <button type="submit" class="btn btn-secondary form-submit-btn">ADD</button>
+            </form>
+
+            <table class="unique-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Image</th>
+                        <th>Value Title</th>
+                        <th>Value Description</th>
+                        <th>Action</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="form_data_slider_aboutus"></tbody>
+            </table>
+        </div>
+    </section>
+    
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../src/JS/admin.js"></script>
+
+</body>
+
+</html>

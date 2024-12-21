@@ -1,0 +1,254 @@
+.agent_detail_cards__row {
+    margin-top: 60px;
+  
+    .agent_detail_top {
+      line-height: 40px;
+  
+      h2 {
+        letter-spacing: -.03em;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 110%;
+      }
+  
+      p {
+        display: flex;
+      }
+    }
+  
+    .agent_detail_cards {
+      background-color: #f7f7f7;
+      border: 1px solid #e8e8e8;
+      border-radius: 32px;
+      justify-content: space-between;
+      padding: 40px;
+      display: flex;
+  
+      .agent_detail_card {
+        h2 {
+          letter-spacing: -.03em;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 40px;
+          font-weight: 550;
+          line-height: 112%;
+        }
+  
+        p {
+          margin-top: 20px;
+        }
+  
+        .agent_detail_card__socialmedia {
+          margin-top: 60px;
+  
+          ul {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+  
+            li {
+              cursor: pointer;
+              transition: 0.2s ease-in-out;
+  
+              i {
+                font-size: 30px;
+                color: gray;
+              }
+  
+              &:hover {
+                transform: scale(1.25);
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .agent_detail_img {
+      width: 350px;
+      height: auto;
+      overflow: hidden;
+      border-radius: 28px;
+  
+      img {
+        @extend %base_img;
+      }
+    }
+  }
+  
+  .agentdetail__infos {
+    max-width: 550px;
+  
+    h2 {
+      letter-spacing: -.03em;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 112%;
+    }
+  
+    p {
+      color: #4c4c4c;
+      margin-bottom: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  .agentdetail__infos1 {
+    max-width: 550px;
+  
+    h2 {
+      letter-spacing: -.03em;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 112%;
+    }
+  
+    p {
+      color: #4c4c4c;
+      margin-bottom: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  .form-container {
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    padding: 40px;
+    box-shadow: 0 36px 56px #00000008;
+    max-width: 360px;
+  
+    h2 {
+      margin-top: 0;
+      color: #333;
+      letter-spacing: 0;
+      font-size: 32px;
+      line-height: 120%;
+      font-weight: 600;
+    }
+  
+    p {
+      letter-spacing: -.01em;
+      font-size: 14px;
+      line-height: 150%;
+      color: #444;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  
+    label {
+      color: gray;
+      letter-spacing: -.01em;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  
+    input {
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      width: 100%;
+      height: 48px;
+      margin-bottom: 0;
+      padding: 13px 20px 14px;
+    }
+  
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #333;
+    }
+  
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #444;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .agent_detail_cards {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .agent_detail_card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .agent_detail_img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .agent_detail_top h2 {
+      font-size: 36px;
+    }
+  
+    .agent_detail_top p {
+      font-size: 14px;
+    }
+  
+    .agent_detail_card h2 {
+      font-size: 28px;
+    }
+  
+    .agent_detail_card p {
+      font-size: 14px;
+    }
+  
+    .form-container {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .form-container h2 {
+      font-size: 28px;
+    }
+  
+    .form-container label {
+      font-size: 12px;
+    }
+  
+    .form-container input,
+    .form-container textarea {
+      font-size: 12px;
+    }
+  
+    .form-container button {
+      font-size: 14px;
+    }
+  }
+  

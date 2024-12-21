@@ -1,0 +1,115 @@
+.login_form {
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 794px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+
+    h2 {
+        color: #333;
+        letter-spacing: -.03em;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    h1 {
+        margin: 0 auto;
+        font-weight: 700;
+        text-align: center;
+        margin: 40px 0;
+        font-size: 40px;
+    }
+}
+
+
+
+.realtor-form {
+    .form-login {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 0.75rem);
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-size: 16px;
+        color: #959595;
+        font-weight: 550;
+        line-height: 30px;
+    }
+
+    input {
+        padding: 0.8rem;
+        border: 1px solid #a8a8a8;
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 20px;
+
+        &:focus {
+            outline: none;
+            border-color: #333;
+        }
+
+        &::placeholder {
+            color: #7979798d;
+        }
+
+        &:first-of-type {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        &:last-of-type {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+
+    .input-group.brokerage-name {
+        width: 100%;
+    }
+
+    .checkbox_group_login {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        width: 100%;
+
+        label {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        input[type="checkbox"] {
+            margin: 0;
+            width: auto;
+        }
+    }
+
+    .submit_btn_login {
+        color: white;
+        background-color: #0c0407;
+        border-radius: 12px;
+        width: 100%;
+        padding: 16px 20px;
+        font-weight: 500;
+        line-height: 100%;
+
+        &:hover {
+            background-color: #333;
+        }
+    }
+}
